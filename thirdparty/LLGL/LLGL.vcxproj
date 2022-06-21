@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{92BD3983-A538-3D6F-8D34-CEC31EE6B698}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>LLGL</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <VcpkgEnabled>false</VcpkgEnabled>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">LLGL.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">LLGLD</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">LLGL.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">LLGL</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">LLGL.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">LLGL</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">LLGL.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">LLGL</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include;D:\vulkan\1.3.211.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4250;4251;4290;4103</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LLGL_DEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;UNICODE;NOMINMAX;LLGL_ENABLE_DEBUG_LAYER;LLGL_ENABLE_UTILITY;LLGL_BUILD_STATIC_LIB;LLGL_D3D11_ENABLE_FEATURELEVEL=0;LLGL_BUILD_RENDERER_VULKAN;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;LLGL_DEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;UNICODE;NOMINMAX;LLGL_ENABLE_DEBUG_LAYER;LLGL_ENABLE_UTILITY;LLGL_BUILD_STATIC_LIB;LLGL_D3D11_ENABLE_FEATURELEVEL=0;LLGL_BUILD_RENDERER_VULKAN;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include;D:\vulkan\1.3.211.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include;D:\vulkan\1.3.211.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include;D:\vulkan\1.3.211.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4250;4251;4290;4103</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;UNICODE;NOMINMAX;LLGL_ENABLE_DEBUG_LAYER;LLGL_ENABLE_UTILITY;LLGL_BUILD_STATIC_LIB;LLGL_D3D11_ENABLE_FEATURELEVEL=0;LLGL_BUILD_RENDERER_VULKAN;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;UNICODE;NOMINMAX;LLGL_ENABLE_DEBUG_LAYER;LLGL_ENABLE_UTILITY;LLGL_BUILD_STATIC_LIB;LLGL_D3D11_ENABLE_FEATURELEVEL=0;LLGL_BUILD_RENDERER_VULKAN;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include;D:\vulkan\1.3.211.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include;D:\vulkan\1.3.211.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include;D:\vulkan\1.3.211.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4250;4251;4290;4103</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;UNICODE;NOMINMAX;LLGL_ENABLE_DEBUG_LAYER;LLGL_ENABLE_UTILITY;LLGL_BUILD_STATIC_LIB;LLGL_D3D11_ENABLE_FEATURELEVEL=0;LLGL_BUILD_RENDERER_VULKAN;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;UNICODE;NOMINMAX;LLGL_ENABLE_DEBUG_LAYER;LLGL_ENABLE_UTILITY;LLGL_BUILD_STATIC_LIB;LLGL_D3D11_ENABLE_FEATURELEVEL=0;LLGL_BUILD_RENDERER_VULKAN;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include;D:\vulkan\1.3.211.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include;D:\vulkan\1.3.211.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include;D:\vulkan\1.3.211.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4250;4251;4290;4103</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;UNICODE;NOMINMAX;LLGL_ENABLE_DEBUG_LAYER;LLGL_ENABLE_UTILITY;LLGL_BUILD_STATIC_LIB;LLGL_D3D11_ENABLE_FEATURELEVEL=0;LLGL_BUILD_RENDERER_VULKAN;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;UNICODE;NOMINMAX;LLGL_ENABLE_DEBUG_LAYER;LLGL_ENABLE_UTILITY;LLGL_BUILD_STATIC_LIB;LLGL_D3D11_ENABLE_FEATURELEVEL=0;LLGL_BUILD_RENDERER_VULKAN;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include;D:\vulkan\1.3.211.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include;D:\vulkan\1.3.211.0\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Grocery/hw/homebrew/llglengine/thirdparty/LLGL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Grocery/hw/homebrew/llglengine/thirdparty/LLGL -BD:/Grocery/hw/homebrew/llglengine/thirdparty/LLGL --check-stamp-file D:/Grocery/hw/homebrew/llglengine/thirdparty/LLGL/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\ROCMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindVulkan.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\3.21.1\CMakeCCompiler.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\3.21.1\CMakeCXXCompiler.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\3.21.1\CMakeRCCompiler.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\3.21.1\CMakeSystem.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\cmake\FindGaussianLib.cmake;D:\tools\git\mypath\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Grocery/hw/homebrew/llglengine/thirdparty/LLGL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Grocery/hw/homebrew/llglengine/thirdparty/LLGL -BD:/Grocery/hw/homebrew/llglengine/thirdparty/LLGL --check-stamp-file D:/Grocery/hw/homebrew/llglengine/thirdparty/LLGL/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\ROCMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindVulkan.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\3.21.1\CMakeCCompiler.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\3.21.1\CMakeCXXCompiler.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\3.21.1\CMakeRCCompiler.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\3.21.1\CMakeSystem.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\cmake\FindGaussianLib.cmake;D:\tools\git\mypath\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Grocery/hw/homebrew/llglengine/thirdparty/LLGL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Grocery/hw/homebrew/llglengine/thirdparty/LLGL -BD:/Grocery/hw/homebrew/llglengine/thirdparty/LLGL --check-stamp-file D:/Grocery/hw/homebrew/llglengine/thirdparty/LLGL/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\ROCMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindVulkan.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\3.21.1\CMakeCCompiler.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\3.21.1\CMakeCXXCompiler.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\3.21.1\CMakeRCCompiler.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\3.21.1\CMakeSystem.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\cmake\FindGaussianLib.cmake;D:\tools\git\mypath\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Grocery/hw/homebrew/llglengine/thirdparty/LLGL/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Grocery/hw/homebrew/llglengine/thirdparty/LLGL -BD:/Grocery/hw/homebrew/llglengine/thirdparty/LLGL --check-stamp-file D:/Grocery/hw/homebrew/llglengine/thirdparty/LLGL/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\ROCMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\FindVulkan.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\3.21.1\CMakeCCompiler.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\3.21.1\CMakeCXXCompiler.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\3.21.1\CMakeRCCompiler.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\3.21.1\CMakeSystem.cmake;D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\cmake\FindGaussianLib.cmake;D:\tools\git\mypath\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Blob.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Buffer.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\BufferArray.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\BufferFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Canvas.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\CanvasFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Color.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\ColorRGB.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\ColorRGBA.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\CommandBuffer.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\CommandBufferFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\CommandQueue.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Constants.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Display.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\DisplayFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Export.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Fence.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Format.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\ForwardDecls.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\FragmentAttribute.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Image.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\ImageFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\IndirectArguments.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Input.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Interface.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\InterfaceID.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Key.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\LLGL.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Log.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\NonCopyable.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\PipelineLayout.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\PipelineLayoutFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\PipelineState.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\PipelineStateFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\QueryHeap.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\QueryHeapFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\RenderContext.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\RenderContextFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\RenderPass.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\RenderPassFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\RenderSystem.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\RenderSystemChild.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\RenderSystemFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\RenderTarget.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\RenderTargetFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\RendererConfiguration.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\RenderingDebugger.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\RenderingProfiler.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Resource.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\ResourceFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\ResourceHeap.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\ResourceHeapFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Sampler.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\SamplerFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Shader.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\ShaderFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\ShaderProgram.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\ShaderProgramFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\StaticLimits.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Strings.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Surface.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\SystemValue.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Tags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Texture.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\TextureFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Timer.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\TypeInfo.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Types.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Utility.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Version.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\VertexAttribute.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\VertexFormat.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\VideoAdapter.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Window.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\WindowFlags.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Platform\NativeHandle.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Platform\Platform.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\include\LLGL\Platform\Win32\Win32NativeHandle.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Assertion.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Barrier.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Barrier.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Blob.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\ByteBufferIterator.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\ContainerUtils.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Exception.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Exception.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Float16Compressor.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Float16Compressor.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Helper.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Helper.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\HelperMacros.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Image.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\ImageFlags.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\ImageUtils.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\ImageUtils.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\ImmutableString.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Input.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Interface.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\LinearStringContainer.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Log.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Strings.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Types.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Utility.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Vendor.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Vendor.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\Version.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Core\VersionMacros.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Canvas.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Display.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\DisplayFlags.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Module.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Timer.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Window.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Win32\MapKey.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Win32\MapKey.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Win32\Win32Display.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Win32\Win32Display.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Win32\Win32LeanAndMean.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Win32\Win32Module.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Win32\Win32Module.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Win32\Win32Timer.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Win32\Win32Timer.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Win32\Win32Window.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Win32\Win32Window.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Win32\Win32WindowCallback.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Win32\Win32WindowCallback.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Win32\Win32WindowClass.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Platform\Win32\Win32WindowClass.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\BasicPipelineLayout.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\BasicPipelineLayout.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\Buffer.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\BufferArray.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\BufferFlags.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\BufferUtils.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\BufferUtils.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\BuildID.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\CheckedCast.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\ContainerTypes.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DescriptorHelper.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DescriptorHelper.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DynamicModuleInterface.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\Format.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\ModuleInterface.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\PipelineStateFlags.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\PipelineStateUtils.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\PipelineStateUtils.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\QueryHeap.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\RenderContext.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\RenderContextFlags.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\RenderSystem.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\RenderSystemFlags.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\RenderSystemUtils.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\RenderTarget.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\RenderingDebugger.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\RenderingProfiler.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\ResourceBindingIterator.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\ResourceBindingIterator.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\Sampler.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\Serialization.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\Serialization.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\Shader.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\ShaderFlags.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\ShaderProgram.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\StaticAssertions.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\StaticAssertions.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\StaticModuleInterface.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\StaticModuleInterface.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\Texture.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\TextureFlags.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\TextureUtils.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\TextureUtils.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\VertexAttribute.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\VertexFormat.cpp" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgBuffer.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgBuffer.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgBufferArray.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgBufferArray.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgCommandBuffer.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgCommandBuffer.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgCommandQueue.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgCommandQueue.h" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgCore.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgPipelineLayout.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgPipelineLayout.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgPipelineState.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgPipelineState.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgQueryHeap.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgQueryHeap.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgQueryTimerManager.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgQueryTimerManager.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgRenderContext.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgRenderContext.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgRenderSystem.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgRenderSystem.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgRenderTarget.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgRenderTarget.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgResourceHeap.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgResourceHeap.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgShader.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgShader.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgShaderProgram.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgShaderProgram.h" />
+    <ClCompile Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgTexture.cpp" />
+    <ClInclude Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\sources\Renderer\DebugLayer\DbgTexture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Grocery\hw\homebrew\llglengine\thirdparty\LLGL\ZERO_CHECK.vcxproj">
+      <Project>{570963DA-C14F-3775-889A-1E21DBDFD500}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
