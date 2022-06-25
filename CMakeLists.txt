@@ -14,6 +14,7 @@ set (All_headers ${CMAKE_SOURCE_DIR}/include)
 include_directories(${All_headers})
 set (Editor_src ${CMAKE_SOURCE_DIR}/src/editor)
 set (Utils_src ${CMAKE_SOURCE_DIR}/src/utils)
+set (Render_src ${CMAKE_SOURCE_DIR}/src/render)
 # set ()
 
 # supress warning
@@ -25,7 +26,7 @@ endif(WIN32)
 find_package(Vulkan REQUIRED)
 if(Vulkan_FOUND)
     include_directories(${Vulkan_INCLUDE_DIR})
-    # target_link_directories(hello PRIVATE ./thirdparty/LLGL/build/Debug)
+    # target_link_directories(hello PUBLIC ./thirdparty/LLGL/build/Debug)
 else()
     message("Missing Vulkan -> LLGL_Vulkan renderer will be excluded from project")
 endif()
@@ -37,8 +38,8 @@ set(LLGLD_lib_path ./thirdparty/LLGL/build/Debug)
 set(LLGLD_libs LLGL_VulkanD.lib LLGLD.lib ${Vulkan_LIBRARY})
 
 macro(ImportLLGLD target_name)
-target_include_directories(${target_name} PRIVATE ${LLGLD_header})
-target_link_directories(${target_name}  PRIVATE ${LLGLD_lib_path})
+target_include_directories(${target_name} PUBLIC ${LLGLD_header})
+target_link_directories(${target_name}  PUBLIC ${LLGLD_lib_path})
 target_link_libraries(${target_name} ${LLGLD_libs})
 endmacro(ImportLLGLD)
 
@@ -50,9 +51,9 @@ set(spdlog_lib_path ./thirdparty/spdlog/build/Debug)
 set(spdlog_libs spdlogd.lib)
 
 macro(ImportspdlogD target_name)
-target_compile_definitions(${target_name} PRIVATE SPDLOG_COMPILED_LIB)
-target_include_directories(${target_name} PRIVATE ${spdlog_header})
-target_link_directories(${target_name} PRIVATE ${spdlog_lib_path})
+target_compile_definitions(${target_name} PUBLIC SPDLOG_COMPILED_LIB)
+target_include_directories(${target_name} PUBLIC ${spdlog_header})
+target_link_directories(${target_name} PUBLIC ${spdlog_lib_path})
 target_link_libraries(${target_name} ${spdlog_libs})
 endmacro(ImportspdlogD)
 
@@ -63,8 +64,8 @@ set(glfw_header ./thirdparty/glfw/include)
 set(glfw_lib_path ./thirdparty/glfw/build/Release)
 set(glfw_libs glfw3.lib)
 macro(Importglfw target_name)
-target_include_directories(${target_name} PRIVATE ${glfw_header})
-target_link_directories(${target_name} PRIVATE ${glfw_lib_path})
+target_include_directories(${target_name} PUBLIC ${glfw_header})
+target_link_directories(${target_name} PUBLIC ${glfw_lib_path})
 # if(NOT EXISTS ${glfw_lib_path}/glfw3.lib)
 # message("lib not exist ")
 # endif()
@@ -79,14 +80,27 @@ set(imgui_src ./thirdparty/imgui/src)
 
 file(GLOB imgui_cpps ${imgui_src}/*.cpp)
 add_library(imgui STATIC ${imgui_cpps})
-target_include_directories(imgui PRIVATE ${imgui_header})
+target_include_directories(imgui PUBLIC ${imgui_header})
 Importglfw(imgui)
 
 macro(Importimgui target_name)
-target_include_directories(${target_name} PRIVATE ${imgui_header})
-Importglfw(${target_name})
+target_include_directories(${target_name} PUBLIC ${imgui_header})
+# Importglfw(${target_name})
 target_link_libraries(${target_name} imgui)
 endmacro(Importimgui)
+
+
+
+
+# jsonlib
+set(nljson_header ./thirdparty/nljson/single_include)
+
+
+macro(Importnljson target_name)
+target_precompile_headers(${target_name} PUBLIC ${nljson_header}/nlohmann/json.hpp)
+target_include_directories(${target_name} PUBLIC ${nljson_header})
+endmacro(Importnljson)
+
 
 
 
@@ -101,15 +115,30 @@ ImportLLGLD(utils)
 Importglfw(utils)
 
 macro(Importutils target_name)
-ImportLLGLD(${target_name})
-Importglfw(${target_name})
+# ImportLLGLD(${target_name})
+# Importglfw(${target_name})
 target_link_libraries(${target_name} utils)
 endmacro(Importutils )
 
 
 
 #render_lib
+file(GLOB render_cpps ${Render_src}/*.cpp)
+add_library(render STATIC ${render_cpps})
+    #LLGL
+ImportLLGLD(render)
+    #SPDLOG
+ImportspdlogD(render)
+    #utils
+Importutils(render)
+    #json
+Importnljson(render)
+macro(Importrender target_name)
+target_compile_definitions(${target_name} PUBLIC LLGL_ENABLE_UTILITY=1)
+target_include_directories(${target_name} PUBLIC ./include)
+target_link_libraries(${target_name} render)
 
+endmacro(Importrender)
 
 
 
@@ -127,14 +156,14 @@ Importimgui(editor)
     #utils
 Importutils(editor)
     # target_include_directories(editor PUBLIC ${Editor_header})
-
+Importnljson(editor)
 macro(Importeditor target_name)
-# target_include_directories(${target_name} PRIVATE ${Editor_header})
-ImportLLGLD(${target_name})
-ImportspdlogD(${target_name})
-Importglfw(${target_name})
-Importimgui(${target_name})
-Importutils(${target_name})
+# target_include_directories(${target_name} PUBLIC ${Editor_header})
+# ImportLLGLD(${target_name})
+# ImportspdlogD(${target_name})
+# Importglfw(${target_name})
+# Importimgui(${target_name})
+# Importutils(${target_name})
 target_link_libraries(${target_name} editor)
 endmacro(Importeditor)
     
@@ -154,7 +183,7 @@ Importutils(hello)
 Importeditor(hello)
 
 
-add_executable(example ./src/demo/Example.cpp)
-ImportLLGLD(example)
+# add_executable(example ./src/demo/Example.cpp)
+# ImportLLGLD(example)
 
 
